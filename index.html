@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>金莲独家小网页</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+      font-family: Arial, sans-serif;
+      background-image: url('https://i.postimg.cc/9QV9HVjD/mmelexport1753886707677.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    #showButton {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #showButton:hover {
+      background-color: #45a049;
+    }
+
+    #textDisplay {
+      margin-top: 30px;
+      /* 文字更大：调整为 32px（可按需再改） */
+      font-size: 32px; 
+      /* 黑色更粗：用更深的黑色 #111，同时加粗字体 */
+      color: #111; 
+      font-weight: bold; 
+      display: none;
+      /* 薄荷绿描边保持细效果，1px */
+      -webkit-text-stroke: 1px #c3fae8; 
+      text-stroke: 1px #c3fae8; 
+    }
+  </style>
+</head>
+
+<body>
+  <button id="showButton">点击我呀~</button>
+  <div id="textDisplay">金莲妹子！🎉<br>今天天气很好<br>你过得怎么样<br>尝试制作了这个</div>
+
+  <script>
+    const button = document.getElementById('showButton');
+    const textDisplay = document.getElementById('textDisplay');
+
+    button.addEventListener('click', function () {
+      textDisplay.style.display = 'block';
+    });
+  </script>
+</body>
+
+</html>
